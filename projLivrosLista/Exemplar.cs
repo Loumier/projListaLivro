@@ -9,11 +9,19 @@ namespace projLivrosLista
     class Exemplar
     {
         private int tombo;
-        private List<Emprestimo> ListaDeEmprestimos = new List<Emprestimo>;
+        private List<Emprestimo> emprestimos = new List<Emprestimo>;
 
         public bool emprestar()
         {
-
+            if (disponivel)
+            {
+                emprestimos.Add(new Emprestimo());
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool devolver()
@@ -23,23 +31,21 @@ namespace projLivrosLista
 
         public bool disponivel()
         {
+            DateTime dataqw ;
+            if (emprestimos.Count.Equals(0) || )
+            {
+                return true;
+            }
 
+            else
+            {
+                return false;
+            }
         }
 
         public int qtdeEmprestimos()
         {
-
-        }
-
-        //Getters & Setters
-        public void setTombo(int gTombo)
-        {
-            this.tombo = gTombo;
-        }
-
-        public int getTombo()
-        {
-            return tombo;
+            return emprestimos.Count();
         }
     }
 }

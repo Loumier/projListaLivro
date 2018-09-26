@@ -8,27 +8,22 @@ namespace projLivrosLista
 {
     class Emprestimo
     {
-        private const double LimiteEmprestimo = 7;
         private DateTime dtEmprestimo, dtDevolucao;
 
         public DateTime getDtEmprestimo()
         {
             return this.dtEmprestimo;
         }
-
-        public void setDtEmprestimo()
-        {
-            this.dtEmprestimo = DateTime.Today;
-        }
-
+        
         public DateTime getDtDevolucao()
         {
             return this.dtDevolucao;
         }
 
-        public void setDtDevolucao()
+        public Emprestimo()
         {
-            this.dtDevolucao = this.dtEmprestimo.AddDays(LimiteEmprestimo);
+            this.dtEmprestimo = DateTime.Today;
+            this.dtDevolucao = DateTime.Today.AddDays(7);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace projLivrosLista
 
         public int qtdeExemplares()
         {
-
+            exemplares.
         }
 
         public int qtdeDisponiveis()

@@ -12,6 +12,7 @@ namespace projLivrosLista
         {
             bool executar = true;
             int opcao;
+            Livros livros = new Livros();
 
             do
             {
@@ -23,6 +24,8 @@ namespace projLivrosLista
                         executar = false;
                         break;
                     case 1:
+                        Console.WriteLine("");
+                        Livros.adicionar;
                         break;
                     case 2:
                         break;
